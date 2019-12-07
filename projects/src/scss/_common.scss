@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	color: $black;
+	font-size: 100%;
+	background-color: $white;
+}
+.mb-70 {
+	margin-bottom: 70px;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+.t-upper {
+	text-transform: uppercase;
+}
+.fas {
+	font-size: 25px;
+	color: $title-color;
+}

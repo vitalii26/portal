@@ -1,0 +1,66 @@
+.projects {
+	min-height: 100vh;
+	background-color: $bg-color;
+	padding: 50px 0px 100px;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__top-title {
+		font-size: 44px;
+		color: $title-color;
+		text-transform: capitalize;
+	}
+	&__top-subtitle {
+		color: $title-color;
+		font-weight: 300;
+
+	}
+	&__top-titles {
+		align-items: center;
+		width: 100%;
+		max-width: 350px;
+		text-align: justify;
+	}
+	&__menu-list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__menu-link {
+		display: flex;
+		padding: 10px 30px;
+		border: 1px solid $border-color;
+		border-radius: 5px;
+		color: $border-color;
+		text-transform: capitalize;
+		font-weight: bold;
+		&:hover {
+			background-color: $white;
+			color: $black;
+		}
+	}
+	&__card {
+		background-color: $white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 15px;
+	}
+	&__card-list {
+		display: flex;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	&__card-item {
+		flex-basis: 50%;
+		&::first-item {
+			
+		}
+	}
+	&__card-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
