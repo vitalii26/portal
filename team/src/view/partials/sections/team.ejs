@@ -1,0 +1,52 @@
+<% const teamCards = [
+{src: '../img/img1.jpg', name: 'tamer', position: 'Senior Software Engineer'},
+{src: '../img/img2.jpg', name: 'hazem', position: 'PHP Developer'},
+{src: '../img/img3.jpg', name: 'mohammed', position: 'PHP Developer'},
+{src: '../img/img4.jpg', name: 'ahmed', position: 'UX/UI Designer'},
+]
+%>
+<% const socialLinks = ['fab fa-facebook-square', 'fab fa-twitter', 'fab fa-instagram', 'fab fa-linkedin-in'] %>
+<section class="team">
+	<div class="container">
+		<div class="row justify-content-center mb-80">
+			<div class="col col-md-6">
+				<div class="team__top">
+					<img  class="team__top-logo" src="../img/icon.png" alt="icon">
+					<div class="team__top-titles">
+						<h2 class="team__top-title">meet our team</h2>
+						<h4 class="team__top-subtitle">We have highly qualified staff with distinguished significant experiences in their field who work under pressure.
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<% teamCards.forEach((teamCard) => { %>
+			<div class="col-12 col-md-4 col-lg-3 col-sm-6 p-2">
+				<div class="team__card">
+					<div class="team__card-imgwr">
+						<img class="team__card-img" src="<%= teamCard.src %>">
+					</div>
+					<h4 class="team__card-name"><%= teamCard.name %>
+					</h4>
+					<h6 class="team__card-position">
+						<%= teamCard.position %>
+					</h6>
+					<ul class="team__card-social-list">
+						<% socialLinks.forEach((socialLink) => { %>
+						<li class="team__card-social-item">
+							<a href="#" target="blank" class="team__card-social-link">
+								<i class="<%= socialLink %>"></i>
+							</a>
+						</li>
+						<% }) %>
+					</ul>
+				</div>
+			</div>
+			<% }) %>
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+</section>
