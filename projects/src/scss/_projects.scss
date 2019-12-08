@@ -9,11 +9,13 @@
 	&__top-title {
 		font-size: 44px;
 		color: $title-color;
+		font-weight: 700;
 		text-transform: capitalize;
 	}
 	&__top-subtitle {
 		color: $title-color;
 		font-weight: 300;
+		font-size: 17px;
 
 	}
 	&__top-titles {
@@ -29,7 +31,7 @@
 	&__menu-link {
 		display: flex;
 		padding: 10px 30px;
-		border: 1px solid $border-color;
+		border: 2px solid $border-color;
 		border-radius: 5px;
 		color: $border-color;
 		text-transform: capitalize;
@@ -37,6 +39,11 @@
 		&:hover {
 			background-color: $white;
 			color: $black;
+		}
+		&.current {
+			background-color: $white;
+			color: $black;
+			border-color: $white;
 		}
 	}
 	&__card {
@@ -62,5 +69,13 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		height: 60px;
+		&:hover .fas{
+			color: $title-color;
+		}
+	}
+	.fas {
+		font-size: 25px;
+		color: $button-color;
 	}
 }
